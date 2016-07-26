@@ -6,7 +6,7 @@ The details please refer to ICDE 2016 paper "SPORE: A sequential personalized sp
 The implementation is based on <a href="http://stanfordnlp.github.io/CoreNLP/">standford nlp</a> library,
 we include it in the lib directory.
 
-For a quick start, you may run the main function in the SPORE.java
+For a quick start, you may run the main function in the model/SPORE.java
 
 If the code is used in academic publication, please cite with following bibtex item:
 
