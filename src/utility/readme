@@ -1,0 +1,14 @@
+1. 运行Preprocessor
+	每个loc至少有5（m）次访问；
+	每个user至少有20（n）次check-in；
+	输入checkinsRaw，输出checkinsPre(去掉了hometown和friends的信息)， locTransPre(记录vid的转换过程)，userTransPre(记录uid的转换过程), wordID(记录wid的转换过程)
+	现在有点儿担心数据过于稀疏了。
+2. 运行SequenceAbstractor
+	目的是为每一条记录都抽取出P(在这之前要调整Paras里面U,V和dataset)
+3. 运行Divider划分训练集和测试集
+	一个用户抽取前面tp(train percent: 0.8)作为训练集，剩下作为测试集，同时注意如果这个用户或者这个item完全没有在training中出现过，我们就把这条记录放到训练集合中。
+	这个过程中为每一个测试集中的v找出它附近的item
+
+
+下面转移到model package进行模型训练：
+	

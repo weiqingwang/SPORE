@@ -1,0 +1,5 @@
+
+
+运行efficiencyTest
+1. 先生成sortedlist.txt
+2. 如果是TA，就调用TA中的query方法；如果是ls，就调用TA中的LinearScan
